@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import { PRODUCT_NAME, WEB_LOGIN_URL, WEB_SIGNUP_URL, GOOGLE_PLAY_URL, LOGO_SRC } from '../../constants';
-
-// import logo from '../../assets/logo.png';
+import { PRODUCT_NAME, WEB_LOGIN_URL, WEB_SIGNUP_URL, GOOGLE_PLAY_URL } from '../../constants';
 
 const NAV_LINKS = [
   { label: 'Features', href: '#features' },
@@ -31,7 +29,9 @@ export function Header() {
           <div className="header__inner">
             <a href="#" className="header__logo" aria-label={`${PRODUCT_NAME} home`}>
               <div className="header__logo-mark" aria-hidden="true">
-                <img src={LOGO_SRC} alt="Naija_med_logo" />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
               </div>
               <span className="header__logo-text">
                 Naija<span>med</span>
