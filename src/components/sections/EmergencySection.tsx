@@ -132,12 +132,12 @@ export function EmergencySection() {
               </div>
             </div>
 
-            <div style={{ background: 'var(--color-bg-blue)', border: '1px solid var(--color-primary-border)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5) var(--space-6)' }}>
+            {/* <div style={{ background: 'var(--color-bg-blue)', border: '1px solid var(--color-primary-border)', borderRadius: 'var(--radius-lg)', padding: 'var(--space-5) var(--space-6)' }}>
               <h5 style={{ marginBottom: 'var(--space-3)', color: 'var(--color-text)' }}>Conservative by Design</h5>
               <p style={{ fontSize: 'var(--text-sm)', color: 'var(--color-text-muted)', lineHeight: 1.65 }}>
                 Naijamed's AI is built to classify conservatively — when symptoms are ambiguous, the system defaults to recommending professional evaluation rather than assuming a mild outcome.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

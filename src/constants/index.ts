@@ -5,7 +5,8 @@ export const COMPANY_NAME = "Naijamed";
 export const TAGLINE = "Built for every Nigerian. Leaving no one behind.";
 
 // App store links — replace with actual store URLs
-export const GOOGLE_PLAY_URL = "#download-android"; // TODO: Replace with actual Google Play URL
+export const GOOGLE_PLAY_URL =
+  "https://drive.google.com/drive/folders/1yKzfkavGmzzAH4e4ROL3LyNTrn50HNW4?usp=sharing"; 
 export const APP_STORE_URL = "#download-ios";        // TODO: Replace with actual App Store URL
 
 // Web app links — replace with actual web app URLs
