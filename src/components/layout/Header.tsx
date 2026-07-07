@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { PRODUCT_NAME, WEB_LOGIN_URL, WEB_SIGNUP_URL, GOOGLE_PLAY_URL, LOGO_SRC } from '../../constants';
+import { useEffect, useState } from 'react';
+import { GOOGLE_PLAY_URL, LOGO_SRC, PRODUCT_NAME, WEB_LOGIN_URL, WEB_SIGNUP_URL } from '../../constants';
 
 // import logo from '../../assets/logo.png';
 
@@ -34,7 +34,7 @@ export function Header() {
                 <img src={LOGO_SRC} alt="Naija_med_logo" />
               </div>
               <span className="header__logo-text">
-                Naija<span>med</span>
+                Naija<span>Med</span> Assistant
               </span>
             </a>
 
