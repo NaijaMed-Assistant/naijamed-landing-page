@@ -6,7 +6,7 @@ export const TAGLINE = "Built for every Nigerian. Leaving no one behind.";
 
 // App store links — replace with actual store URLs
 export const GOOGLE_PLAY_URL =
-  "https://www.dropbox.com/scl/fi/cz7igih8vdddbh1cb2ssu/app-release.apk?rlkey=8ub7pdzfofg833kajc5wt2uv5&st=vs1nnd2w&e=1&dl=0"; 
+  "https://drive.google.com/drive/folders/1yKzfkavGmzzAH4e4ROL3LyNTrn50HNW4?usp=sharing"; 
 export const APP_STORE_URL = "#download-ios";        // TODO: Replace with actual App Store URL
 
 // Web app links — replace with actual web app URLs
