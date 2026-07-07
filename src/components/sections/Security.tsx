@@ -80,14 +80,14 @@ export function Security() {
           ))}
         </div>
 
-        <div className="security-disclaimer" role="note">
+        {/* <div className="security-disclaimer" role="note">
           <p>
             <strong>Security Note:</strong> Naijamed is designed with security and privacy in mind.
             We implement encryption, role-based access, and responsible data handling practices.
             The platform is not yet certified under specific regulatory frameworks such as HIPAA, NDPR, or ISO 27001.
             Users should consult with us directly regarding institutional compliance requirements.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

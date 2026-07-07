@@ -59,7 +59,7 @@ function App() {
         <DoctorFeatures />
         <EmergencySection />
         <HowItWorks />
-        <ProductPreview />
+        {/* <ProductPreview /> */}
         <UseCases />
         <ValueProposition />
         <AppDownload />
