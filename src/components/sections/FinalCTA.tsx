@@ -61,14 +61,14 @@ export function FinalCTA() {
           <InlineQR />
         </div>
 
-        <div style={{ marginTop: 'var(--space-16)', padding: 'var(--space-6)', background: 'rgba(255,255,255,0.06)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', maxWidth: '640px', margin: 'var(--space-16) auto 0' }}>
+        {/* <div style={{ marginTop: 'var(--space-16)', padding: 'var(--space-6)', background: 'rgba(255,255,255,0.06)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(255,255,255,0.1)', maxWidth: '640px', margin: 'var(--space-16) auto 0' }}>
           <p style={{ fontSize: 'var(--text-sm)', color: 'var(--blue-200)', lineHeight: 1.7 }}>
             <strong style={{ color: 'var(--blue-100)' }}>Medical Disclaimer:</strong> Naijamed Assistant is an AI-assisted health information tool.
             It does not replace professional medical advice, diagnosis, treatment, or emergency services.
             Always consult a qualified healthcare professional for any medical concern.
             In an emergency, contact your local emergency services immediately.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
