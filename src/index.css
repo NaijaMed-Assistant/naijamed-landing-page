@@ -465,7 +465,7 @@ p {
 .header__logo-mark {
   width: 36px;
   height: 36px;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   border-radius: var(--radius);
   display: flex;
   align-items: center;

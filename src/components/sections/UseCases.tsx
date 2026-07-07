@@ -70,9 +70,9 @@ export function UseCases() {
           ))}
         </div>
 
-        <p style={{ textAlign: 'center', marginTop: 'var(--space-10)', fontSize: 'var(--text-sm)', color: 'var(--color-text-muted)', fontStyle: 'italic' }}>
+        {/* <p style={{ textAlign: 'center', marginTop: 'var(--space-10)', fontSize: 'var(--text-sm)', color: 'var(--color-text-muted)', fontStyle: 'italic' }}>
           These are illustrative use-case scenarios, not real testimonials. All names and details are fictional.
-        </p>
+        </p> */}
       </div>
     </section>
   );
