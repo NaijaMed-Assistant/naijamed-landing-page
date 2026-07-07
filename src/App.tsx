@@ -12,7 +12,7 @@ import { AppDownload } from './components/sections/AppDownload';
 import { WebAccess } from './components/sections/WebAccess';
 import { ValueProposition } from './components/sections/ValueProposition';
 import { Security } from './components/sections/Security';
-import { ProductPreview } from './components/sections/ProductPreview';
+// import { ProductPreview } from './components/sections/ProductPreview';
 import { UseCases } from './components/sections/UseCases';
 import { FAQ } from './components/sections/FAQ';
 import { FinalCTA } from './components/sections/FinalCTA';
