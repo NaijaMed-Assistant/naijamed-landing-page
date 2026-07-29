@@ -1,6 +1,6 @@
 import { AppStoreButton } from '../ui/AppStoreButton';
 import {
-  GOOGLE_PLAY_URL, APP_STORE_URL, WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL,
+  WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL,
   PRIVACY_POLICY_URL, TERMS_URL, DISCLAIMER_URL, CONTACT_EMAIL
 } from '../../constants';
 

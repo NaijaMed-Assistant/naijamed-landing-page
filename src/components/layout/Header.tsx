@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { GOOGLE_PLAY_URL, APP_STORE_URL, LOGO_SRC, PRODUCT_NAME, WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL } from '../../constants';
+import { LOGO_SRC, PRODUCT_NAME, WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL } from '../../constants';
 
 // import logo from '../../assets/logo.png';
 
