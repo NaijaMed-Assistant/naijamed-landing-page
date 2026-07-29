@@ -3,8 +3,8 @@ import { SectionHeader } from '../ui/SectionHeader';
 
 const PATIENT_STEPS = [
   {
-    title: 'Download the App',
-    desc: 'Get Naijamed from the Google Play Store or Apple App Store on your Android or iOS device.',
+    title: 'Join the Waitlist',
+    desc: 'Sign up for early access to Naijamed and be among the first to know when we launch publicly.',
   },
   {
     title: 'Create an Account',

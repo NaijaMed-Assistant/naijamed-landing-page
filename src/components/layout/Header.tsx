@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { GOOGLE_PLAY_URL, LOGO_SRC, PRODUCT_NAME, WEB_LOGIN_URL, WEB_SIGNUP_URL } from '../../constants';
+import { GOOGLE_PLAY_URL, APP_STORE_URL, LOGO_SRC, PRODUCT_NAME, WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL } from '../../constants';
 
 // import logo from '../../assets/logo.png';
 
@@ -48,8 +48,9 @@ export function Header() {
               <a href={WEB_LOGIN_URL} className="btn btn--ghost" style={{ background: 'transparent', color: 'var(--color-text-body)', fontWeight: 500, fontSize: 'var(--text-sm)', padding: '0.5rem 0.75rem', border: 'none' }}>
                 Log In
               </a>
-              <a href={GOOGLE_PLAY_URL} className="btn btn--primary btn--sm">
-                Download App
+              <a href={WAITLIST_URL} className="btn btn--primary btn--sm">
+                Join Waitlist
+                {/* Download App */}
               </a>
             </div>
 
@@ -86,8 +87,9 @@ export function Header() {
           <a href={WEB_SIGNUP_URL} className="btn btn--outline" style={{ textAlign: 'center' }} onClick={closeMenu}>
             Sign Up
           </a>
-          <a href={GOOGLE_PLAY_URL} className="btn btn--primary" style={{ textAlign: 'center' }} onClick={closeMenu}>
-            Download App
+          <a href={WAITLIST_URL} className="btn btn--primary" style={{ textAlign: 'center' }} onClick={closeMenu}>
+            Join Waitlist
+            {/* Download App */}
           </a>
         </div>
       </nav>

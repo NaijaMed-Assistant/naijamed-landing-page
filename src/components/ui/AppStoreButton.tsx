@@ -1,29 +1,50 @@
 interface AppStoreButtonProps {
-  store: 'google' | 'apple';
+  store: 'google' | 'apple' | 'waitlist';
   href: string;
   variant?: 'dark' | 'light' | 'outline';
 }
 
 export function AppStoreButton({ store, href, variant = 'dark' }: AppStoreButtonProps) {
   const isApple = store === 'apple';
+  const isWaitlist = store === 'waitlist';
   const className = `store-btn${variant === 'outline' ? ' store-btn--outline' : variant === 'light' ? ' store-btn--dark' : ''}`;
+
+  const label = isWaitlist
+    ? 'Join the waitlist'
+    : isApple
+      ? 'Download on the App Store'
+      : 'Get it on Google Play';
+
+  const smallText = isWaitlist ? 'Join the' : isApple ? 'Download on the' : 'Get it on';
+  const strongText = isWaitlist ? 'Waitlist' : isApple ? 'App Store' : 'Google Play';
 
   return (
     <a
       href={href}
       className={className}
-      aria-label={isApple ? 'Download on the App Store' : 'Get it on Google Play'}
+      aria-label={label}
       target="_blank"
       rel="noopener noreferrer"
     >
       <span className="store-btn__icon" aria-hidden="true">
-        {isApple ? <AppleIcon /> : <GooglePlayIcon />}
+        {isWaitlist ? <WaitlistIcon /> : isApple ? <AppleIcon /> : <GooglePlayIcon />}
       </span>
       <span className="store-btn__text">
-        <small>{isApple ? 'Download on the' : 'Get it on'}</small>
-        <strong>{isApple ? 'App Store' : 'Google Play'}</strong>
+        <small>{smallText}</small>
+        <strong>{strongText}</strong>
       </span>
     </a>
+  );
+}
+
+function WaitlistIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M4 7h16" />
+      <path d="M7 12h10" />
+      <path d="M9 17h6" />
+      <path d="M4 4h16v16H4z" />
+    </svg>
   );
 }
 

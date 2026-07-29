@@ -1,6 +1,6 @@
 import { AppStoreButton } from '../ui/AppStoreButton';
 import {
-  GOOGLE_PLAY_URL, APP_STORE_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL,
+  GOOGLE_PLAY_URL, APP_STORE_URL, WAITLIST_URL, WEB_LOGIN_URL, WEB_SIGNUP_URL,
   PRIVACY_POLICY_URL, TERMS_URL, DISCLAIMER_URL, CONTACT_EMAIL
 } from '../../constants';
 
@@ -27,8 +27,9 @@ export function Footer() {
               doctors, and intelligent health support in one trusted app.
             </p>
             <div className="footer__store-row">
-              <AppStoreButton store="google" href={GOOGLE_PLAY_URL} variant="light" />
-              <AppStoreButton store="apple" href={APP_STORE_URL} variant="light" />
+              {/* <AppStoreButton store="google" href={GOOGLE_PLAY_URL} variant="light" />
+              <AppStoreButton store="apple" href={APP_STORE_URL} variant="light" /> */}
+              <AppStoreButton store="waitlist" href={WAITLIST_URL} variant="light" />
             </div>
           </div>
 
@@ -46,8 +47,9 @@ export function Footer() {
           <div>
             <h3 className="footer__col-title">Access</h3>
             <ul className="footer__links">
-              <li><a href={GOOGLE_PLAY_URL}>Google Play</a></li>
-              <li><a href={APP_STORE_URL}>App Store (iOS)</a></li>
+              <li><a href={WAITLIST_URL}>Join Waitlist</a></li>
+              {/* <li><a href={GOOGLE_PLAY_URL}>Google Play</a></li>
+              <li><a href={APP_STORE_URL}>App Store (iOS)</a></li> */}
               <li><a href={WEB_LOGIN_URL}>Web Login</a></li>
               <li><a href={WEB_SIGNUP_URL}>Web Signup</a></li>
               <li><a href="#faq">FAQ</a></li>

@@ -1,5 +1,5 @@
 import { AppStoreButton } from '../ui/AppStoreButton';
-import { GOOGLE_PLAY_URL, APP_STORE_URL, WEB_LOGIN_URL } from '../../constants';
+import { WAITLIST_URL, WEB_LOGIN_URL } from '../../constants';
 
 function PhoneMockupMain() {
   return (
@@ -87,9 +87,9 @@ export function Hero() {
             </p>
 
             <div className="hero__cta-group">
-              <a href={GOOGLE_PLAY_URL} className="btn btn--primary btn--lg">
+              <a href={WAITLIST_URL} className="btn btn--primary btn--lg">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
-                Download the App
+                Join Waitlist
               </a>
               <a href={WEB_LOGIN_URL} className="btn btn--outline btn--lg">
                 Explore Web Version
@@ -97,9 +97,8 @@ export function Hero() {
             </div>
 
             <div className="hero__store-group">
-              <span className="hero__store-label">Available on</span>
-              <AppStoreButton store="google" href={GOOGLE_PLAY_URL} />
-              <AppStoreButton store="apple" href={APP_STORE_URL} />
+              <span className="hero__store-label">Early access</span>
+              <AppStoreButton store="waitlist" href={WAITLIST_URL} />
             </div>
           </div>
 

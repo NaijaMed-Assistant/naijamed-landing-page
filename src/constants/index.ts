@@ -8,6 +8,7 @@ export const TAGLINE = "Built for every Nigerian. Leaving no one behind.";
 export const GOOGLE_PLAY_URL =
   "https://drive.google.com/drive/folders/1yKzfkavGmzzAH4e4ROL3LyNTrn50HNW4?usp=sharing"; 
 export const APP_STORE_URL = "#download-ios";        // TODO: Replace with actual App Store URL
+export const WAITLIST_URL = "https://forms.gle/hxYQ74xt1CoRPofy6";
 
 // Web app links — replace with actual web app URLs
 export const WEB_LOGIN_URL = "#login";               // TODO: Replace with actual login URL

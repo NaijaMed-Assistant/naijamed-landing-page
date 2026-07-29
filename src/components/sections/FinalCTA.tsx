@@ -1,5 +1,5 @@
 import { AppStoreButton } from '../ui/AppStoreButton';
-import { GOOGLE_PLAY_URL, APP_STORE_URL, WEB_SIGNUP_URL, QR_CODE_IMAGE } from '../../constants';
+import { WAITLIST_URL, WEB_SIGNUP_URL, QR_CODE_IMAGE } from '../../constants';
 
 function InlineQR() {
   return (
@@ -22,7 +22,7 @@ function InlineQR() {
         )}
       </div>
       <span style={{ fontSize: 'var(--text-xs)', color: 'var(--blue-300)', textAlign: 'center', maxWidth: '100px' }}>
-        Scan to download
+        Join the waitlist
       </span>
     </div>
   );
@@ -33,7 +33,7 @@ export function FinalCTA() {
     <section id="get-started" className="final-cta" aria-labelledby="cta-heading">
       <div className="container">
         <h2 id="cta-heading">
-          Better Health Support Starts Here —<br />Download Naijamed Today
+          Better Health Support Starts Here —<br />Join the Waitlist Today
         </h2>
         <p>
           Join thousands of Nigerians accessing smarter health guidance, AI symptom checking,
@@ -41,9 +41,9 @@ export function FinalCTA() {
         </p>
 
         <div className="final-cta__actions">
-          <a href={GOOGLE_PLAY_URL} className="btn btn--white btn--lg">
+          <a href={WAITLIST_URL} className="btn btn--white btn--lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
-            Download the App
+            Join Waitlist
           </a>
           <a href={WEB_SIGNUP_URL} className="btn btn--white-outline btn--lg">
             Create a Web Account
@@ -52,8 +52,7 @@ export function FinalCTA() {
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 'var(--space-8)', flexWrap: 'wrap' }}>
           <div className="final-cta__store-row">
-            <AppStoreButton store="google" href={GOOGLE_PLAY_URL} variant="light" />
-            <AppStoreButton store="apple" href={APP_STORE_URL} variant="light" />
+            <AppStoreButton store="waitlist" href={WAITLIST_URL} variant="light" />
           </div>
 
           <div style={{ width: '1px', height: '80px', background: 'rgba(255,255,255,0.15)' }} aria-hidden="true" />

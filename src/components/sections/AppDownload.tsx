@@ -1,5 +1,5 @@
 import { AppStoreButton } from '../ui/AppStoreButton';
-import { GOOGLE_PLAY_URL, APP_STORE_URL, QR_CODE_IMAGE } from '../../constants';
+import { WAITLIST_URL, QR_CODE_IMAGE } from '../../constants';
 
 function QRCodeBlock() {
   return (
@@ -22,7 +22,7 @@ function QRCodeBlock() {
           </>
         )}
       </div>
-      <p>Scan to download on Android or iOS</p>
+      <p>Join the waitlist for early access</p>
     </div>
   );
 }
@@ -33,16 +33,15 @@ export function AppDownload() {
       <div className="container">
         <h2 id="download-heading">Take Naijamed Everywhere You Go</h2>
         <p>
-          Available on Android and iOS. Download the app, create your account,
-          and start accessing smarter health support today.
+          Join the waitlist to get early access, create your account,
+          and start accessing smarter health support as soon as we launch.
         </p>
 
         <div className="download-layout">
           <div className="download-store-group">
-            <span className="download-store-label">Download for free</span>
+            <span className="download-store-label">Early access</span>
             <div className="download-store-buttons">
-              <AppStoreButton store="google" href={GOOGLE_PLAY_URL} variant="light" />
-              <AppStoreButton store="apple" href={APP_STORE_URL} variant="light" />
+              <AppStoreButton store="waitlist" href={WAITLIST_URL} variant="light" />
             </div>
           </div>
 
