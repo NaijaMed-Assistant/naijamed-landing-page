@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { label: 'FAQ', href: '#faq' },
 ];
 
-export function Header() {
+export function Header({ isPrivacyPage = false }: { isPrivacyPage?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,7 +29,7 @@ export function Header() {
       <header className={`header${scrolled ? ' scrolled' : ''}`} role="banner">
         <div className="container">
           <div className="header__inner">
-            <a href="#" className="header__logo" aria-label={`${PRODUCT_NAME} home`}>
+            <a href={isPrivacyPage ? '/' : '#'} className="header__logo" aria-label={`${PRODUCT_NAME} home`}>
               <div className="header__logo-mark" aria-hidden="true">
                 <img src={LOGO_SRC} alt="Naija_med_logo" />
               </div>
@@ -40,7 +40,7 @@ export function Header() {
 
             <nav className="header__nav" aria-label="Main navigation">
               {NAV_LINKS.map(link => (
-                <a key={link.href} href={link.href}>{link.label}</a>
+                <a key={link.href} href={`${isPrivacyPage ? '/' : ''}${link.href}`}>{link.label}</a>
               ))}
             </nav>
 
@@ -77,7 +77,7 @@ export function Header() {
       >
         <div className="mobile-nav__links">
           {NAV_LINKS.map(link => (
-            <a key={link.href} href={link.href} onClick={closeMenu}>{link.label}</a>
+            <a key={link.href} href={`${isPrivacyPage ? '/' : ''}${link.href}`} onClick={closeMenu}>{link.label}</a>
           ))}
         </div>
         <div className="mobile-nav__actions">

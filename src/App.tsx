@@ -16,8 +16,15 @@ import { Security } from './components/sections/Security';
 import { UseCases } from './components/sections/UseCases';
 import { FAQ } from './components/sections/FAQ';
 import { FinalCTA } from './components/sections/FinalCTA';
+import { PrivacyPolicy } from './components/pages/PrivacyPolicy';
 
 function App() {
+  const isPrivacyPage = window.location.pathname.replace(/\/+$/, '') === '/privacy';
+
+  if (isPrivacyPage) {
+    return <PrivacyPolicy />;
+  }
+
   return (
     <>
       <a

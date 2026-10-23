@@ -22,6 +22,6 @@ export const LOGO_SRC = "/logo.png"; // TODO: Replace with "/logo.svg"
 
 // Contact / social
 export const CONTACT_EMAIL = "hello@naijamed.ng"; // TODO: Confirm actual email
-export const PRIVACY_POLICY_URL = "#privacy";     // TODO: Replace with actual privacy policy URL
+export const PRIVACY_POLICY_URL = "/privacy";
 export const TERMS_URL = "#terms";                // TODO: Replace with actual terms of service URL
 export const DISCLAIMER_URL = "#disclaimer";      // TODO: Replace with actual medical disclaimer URL

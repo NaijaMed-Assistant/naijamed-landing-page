@@ -4,8 +4,9 @@ import {
   PRIVACY_POLICY_URL, TERMS_URL, DISCLAIMER_URL, CONTACT_EMAIL
 } from '../../constants';
 
-export function Footer() {
+export function Footer({ isPrivacyPage = false }: { isPrivacyPage?: boolean }) {
   const year = new Date().getFullYear();
+  const homeLink = (href: string) => `${isPrivacyPage ? '/' : ''}${href}`;
 
   return (
     <footer className="footer" role="contentinfo">
@@ -36,11 +37,11 @@ export function Footer() {
           <div>
             <h3 className="footer__col-title">Platform</h3>
             <ul className="footer__links">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#patients">For Patients</a></li>
-              <li><a href="#doctors">For Doctors</a></li>
-              <li><a href="#emergency">Emergency Support</a></li>
-              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href={homeLink('#features')}>Features</a></li>
+              <li><a href={homeLink('#patients')}>For Patients</a></li>
+              <li><a href={homeLink('#doctors')}>For Doctors</a></li>
+              <li><a href={homeLink('#emergency')}>Emergency Support</a></li>
+              <li><a href={homeLink('#how-it-works')}>How It Works</a></li>
             </ul>
           </div>
 
@@ -52,15 +53,15 @@ export function Footer() {
               <li><a href={APP_STORE_URL}>App Store (iOS)</a></li> */}
               <li><a href={WEB_LOGIN_URL}>Web Login</a></li>
               <li><a href={WEB_SIGNUP_URL}>Web Signup</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href={homeLink('#faq')}>FAQ</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="footer__col-title">Company</h3>
             <ul className="footer__links">
-              <li><a href="#value">About</a></li>
-              <li><a href="#security">Privacy & Security</a></li>
+              <li><a href={homeLink('#value')}>About</a></li>
+              <li><a href={homeLink('#security')}>Privacy & Security</a></li>
               <li><a href={`mailto:${CONTACT_EMAIL}`}>Contact</a></li>
               <li><a href={PRIVACY_POLICY_URL}>Privacy Policy</a></li>
               <li><a href={TERMS_URL}>Terms of Use</a></li>
